@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color: #b8b3a2 !important; 
+    }
+    .hero-section {
+        background: url("brown.png") no-repeat center center/cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+    }
+    .navbar {
+        background-color: #b8b3a2 !important; 
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #3e2723 !important;
+    }
+    .navbar .nav-link:hover {
+        color: #131211 !important;
+    }
+    .navbar .btn-outline-success {
+        color: #13100f;
+        border-color: #3e2723;
+    }
+    .navbar .btn-outline-success:hover {
+        background-color: #3e2723;
+        color: #141212;
+    }
+    #contact {
+        background-color: transparent !important;
+    }
+#contact {
+    background-color: transparent !important;
+}
+#contact .card {
+    background-color: #ffffff;
+    border: 1px solid #e0dacf;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(62, 39, 35, 0.08) !important;
+}
+#contact h3 {
+    color: #3e2723;
+    font-weight: 700;
+}
+#contact .form-control {
+    border: 1.5px solid #d7ccc8;
+    background-color: #faf8f5;
+    color: #3e2723;
+    border-radius: 8px;
+}
+#contact .form-control:focus {
+    border-color: #3e2723;
+    box-shadow: 0 0 0 0.25rem rgba(62, 39, 35, 0.15);
+    background-color: #ffffff;
+}
+#contact label {
+    color: #6d4c41;
+}
+#contact .btn-dark {
+    background-color: #3e2723 !important;
+    border-color: #3e2723 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+#contact .btn-dark:hover {
+    background-color: #1b0000 !important;
+    border-color: #1b0000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(62, 39, 35, 0.3);
+}
+#contact .card {
+    background-color: #e1dcd1!important; 
+    border: 1px solid #d7ccc8;
+    border-radius: 15px;
+}
+#contact h3 {
+    color: #3e2723 !important;
+}
+#contact .form-control {
+    background-color: #fbfaf7 !important;
+    border: 1px solid #d7ccc8;
+}
+
+#contact .btn-dark {
+    background-color: #3e2723 !important;
+    color: #ffffff !important;
+}
+#packages .card {
+    background-color: #e1dcd1!important; 
+    border: 1px solid #d7ccc8 !important;
+}
+
+
+.site-footer {
+    background-color: #2b1b17; 
+    color: #d7ccc8;
+    margin-top: 50px;
+}
+.footer-heading {
+    color: #f4f1ea;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-text {
+    color: #b8b3a2;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #b8b3a2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+.footer-divider {
+    border-color: #4e342e;
+    opacity: 0.5;
+}
+.copyright-text {
+    color: #a1887f;
+    font-size: 0.85rem;
+}
+    </style>
+  </head>
+<body>
+ <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Navbar scroll</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+   
+    <header class="hero-section text-center py-5 bg-light">
+        <div class="container">
+ <h1 class="display-3 fw-bold">New Collection</h1>
+ <p class="lead">Buy trendy clothing for women, men, kids, and premium bedding at Eman Ideas.</p>
+<button id="exploreBtn" class="btn btn-primary btn-lg">Shop now</button>
+ </div>
+</header>
+ 
+ 
+   <section id="packages" class="container-fluid my-5 px-4">
+    
+ <h2 class="text-center mb-4">Fashionable clothes</h2>
+<div class="row g-4">
+ <div class="col-md-4">
+  <div class="card h-100 shadow">
+<img src="Screenshot 2026-10-21 234731.png" class="card-img-top" alt="Lawn Frock">
+<div class="card-body text-center">
+<h5 class="card-title">Lawn Frock</h5>
+ <p class="card-text">Printed A-line short frock with schiffli embroidery.</p>
+ <button class="btn btn-outline-primary info-btn" data-product="Lawn Frock">Order Now</button>
+  </div>
+  </div>
+ </div>
+ <div class="col-md-4">
+<div class="card h-100 shadow">
+  <img src="kkk.png" class="card-img-top" alt="Woolen Sweater">
+<div class="card-body text-center">
+  <h5 class="card-title">Piped Woolen Sweater</h5>
+ <p class="card-text">Sweater with a ribbed crew neck.</p>
+ <button class="btn btn-outline-primary info-btn" data-product="Piped Woolen Sweater">Order Now</button>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+ <div class="card h-100 shadow">
+ <img src="pii.png" class="card-img-top" alt="Silk Suit">
+<div class="card-body text-center">
+ <h5 class="card-title">2 Piece Premium Silk Suit</h5>
+<p class="card-text">Flowy Schiffli embroidered shirt with a scalloped edge.</p>
+ <button class="btn btn-outline-primary info-btn" data-product="2 Piece Premium Silk Suit">Order Now</button>
+ </div>
+</div>
+ </div>
+   <div class="col-md-4">
+ <div class="card h-100 shadow">
+   <img src="dd.png" class="card-img-top" alt="Lawn Frock">
+ <div class="card-body text-center">
+ <h5 class="card-title">Lawn Frock</h5>
+ <p class="card-text">Printed A-line short frock with schiffli embroidery.</p>
+ <button class="btn btn-outline-primary info-btn" data-product="Lawn Frock">Order Now</button>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card h-100 shadow">
+ <img src="gree.png" class="card-img-top" alt="Woolen Sweater">
+ <div class="card-body text-center">
+ <h5 class="card-title">Piped Woolen Sweater</h5>
+   <p class="card-text">Sweater with a ribbed crew neck.</p>
+  <button class="btn btn-outline-primary info-btn" data-product="Piped Woolen Sweater">Order Now</button>
+  </div>
+</div>
+ </div>
+<div class="col-md-4">
+ <div class="card h-100 shadow">
+<img src="nn.png" class="card-img-top" alt="Silk Suit">
+<div class="card-body text-center">
+<h5 class="card-title">2 Piece Premium Silk Suit</h5>
+<p class="card-text">Flowy Schiffli embroidered shirt with a scalloped edge.</p>
+<button class="btn btn-outline-primary info-btn" data-product="2 Piece Premium Silk Suit">Order Now</button>
+  </div>
+ </div>
+ </div>
+ </div>
+ </section>
+<section id="contact" class="bg-light py-5">
+ <div class="container col-md-6">
+<div class="card p-4 shadow">
+ <h3 class="text-center mb-3">Contact Us</h3>
+<div id="contactWarning" class="alert alert-warning d-none" role="contentinfo">
+ Please fill out all the required fields before submitting!
+ </div>
+<form id="contactForm">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingUsername" placeholder="Enter your username" required>
+    <label for="floatingUsername">Username</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+    <label for="floatingPassword">Password</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+    <label for="floatingEmail">Email address</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+    <label for="floatingTextarea">Comments</label>
+  </div>
+
+  <button type="submit" class="btn btn-dark w-100 py-2">Submit</button>
+</form>
+                <div id="formAlert" class="alert alert-success mt-3 d-none">Thank you! Your message has been received.</div>
+            </div>
+        </div>
+    </section>
+=<footer class="site-footer">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-heading mb-3">Eman Ideas</h5>
+        <p class="footer-text">
+          Buy trendy clothing for women, men, kids, and premium bedding at the best prices. Modern design meets tradition.
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#packages">Popular Packages</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading mb-3">Customer Service</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading mb-3">Get In Touch</h5>
+        <p class="footer-text mb-2"><strong>Email:</strong> support@emanideas.com</p>
+        <p class="footer-text mb-2"><strong>Phone:</strong> +92 300 1234567</p>
+        <p class="footer-text"><strong>Location:</strong> Karachi, Pakistan</p>
+      </div>
+    </div>
+
+    <hr class="footer-divider my-4">
+    <div class="row align-items-center">
+      <div class="col-md-12 text-center">
+        <p class="copyright-text mb-0">&copy; 2026 Eman Ideas. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+>
+    <script>
+        $(document).ready(function() {
+           $('.info-btn').on('click', function() {
+            let productName = $(this).data('product');
+            alert("Thank you! You have ordered: " + productName);
+        });
+            $('#exploreBtn').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#packages').offset().top
+                }, 800);
+            });
+            $('#contactForm').submit(function(event) {
+                event.preventDefault();
+                var username = $('#floatingInput').val().trim();
+                var password = $('#floatingPassword').val().trim();
+                var email = $('#floatingInput').val().trim();
+                var comments = $('#floatingTextarea').val().trim();
+
+                if (username === "" || password === "" || email === "" || comments === "") {
+                    $('#contactWarning').removeClass('d-none');
+                    $('#formAlert').addClass('d-none');
+                } else {
+                    $('#contactWarning').addClass('d-none');
+                    $('#formAlert').removeClass('d-none');
+                   ;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
